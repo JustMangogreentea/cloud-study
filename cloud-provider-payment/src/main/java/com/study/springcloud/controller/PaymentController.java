@@ -24,6 +24,7 @@ public class PaymentController {
     public Result create(Payment payment) {
         int result = paymentService.create(payment);
         log.info("***插入结果：" + result);
+        System.out.println("123");
         return new Result(200, "success", result);
     }
 
